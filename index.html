@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Report</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Report Semanal de Atendimento">
+		<meta name="author" content="Brunno">
+		<link href="css/block/title.css" rel="stylesheet">
+		<link href="css/block/gns.css" rel="stylesheet">
+		<link href="css/block/gdi.css" rel="stylesheet">
+		<link href="css/block/gdd.css" rel="stylesheet">
+		<link href="css/block/gdc.css" rel="stylesheet">
+		<link href="css/block/gsi.css" rel="stylesheet">
+		<link href="css/block/pds.css" rel="stylesheet">
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="conteiner">
+			<!-- Titulo do Report -->
+			<div class="title">
+				<div class="title-logoProc"><img src="img/logo_proc.png"></div>
+				<div class="title-text">
+					<strong>Report de Atendimento<br></strong>
+					<strong class="title-subtitle">De 10/01/12 a 10/30/14</strong>
+				</div>
+				<div class="title-logoCliente"><img src="img/logo_cliente.png"></div>
+				<div class="title-ano">2017</div>
+			</div>
+			<!-- Fim Titulo -->
+			<!-- GESTÃO DO NÍVEL DE SERVIÇO - SLM -->
+			<div class="gns-title">GESTÃO DO NÍVEL DE SERVIÇO - SLM</div>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Indicadores</th>
+						<th>SEM 1</th>
+						<th>SEM 2</th>
+						<th>SEM 3</th>
+						<th>SEM 4</th>
+						<th>SEM 5</th>
+						<th>Acumulado</th>
+						<th>Meta</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Média De Chamados Por Dia</th>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">Tempo Médio De Encerramento</th>
+						<td>00:00:00</td>
+						<td>00:00:00</td>
+						<td>00:00:00</td>
+						<td>00:00:00</td>
+						<td>00:00:00</td>
+						<td>00:00:00</td>
+						<td>00:00:00</td>
+					</tr>
+					<tr>
+						<th scope="row">Total de Chamados por Semana</th>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">% Backlog</th>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">% Pesquisa de Satisfação</th>
+						<td>0,00%</td>
+						<td>0,00%</td>
+						<td>0,00%</td>
+						<td>0,00%</td>
+						<td>0,00%</td>
+						<td>0,00%</td>
+						<td>0,00%</td>
+						
+					</tr>
+					<tr>
+						<th scope="row">Número de Usuários Atendidos</th>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- Gestão de incidentes-->
+			<div class="gdi-title">GESTÃO DE INCIDENTES</div>
+			<!-- Row incidentes-->
+			<div class="gdi-title gdi-subtitle">Incidentes</div>
+			<div class="gdi-block gdi-abertos">53<br>Abertos</div>
+			<div class="gdi-block gdi-backlog">5<br>Backlog</div>
+			<div id="gdi-chart"></div>
+			<!-- Row Requisições-->
+			<div class="gdi-title gdi-subtitle">Requisições</div>
+			<div class="gdi-block gdi-abertos">53<br>Abertos</div>
+			<div class="gdi-block gdi-backlog">5<br>Backlog</div>
+			<div id="gdi-chart2"></div>
+			
+			<!-- Gestão de disponibilidade-->
+			<div class="gdd-title">GESTÃO DE DISPONIBILIDADE</div>
+			<!-- Row gdd -->
+			<div class="gdd-block">
+				<div class="gdd-block-text-top">Diponibilidade Servidores AD</div>
+				100,00%
+				<div class="gdd-block-text-base">Meta: 99,90%</div>
+			</div>
+			<div class="gdd-block">
+				<div class="gdd-block-text-top">Disponibilidade Servidores Exchange</div>
+				100,00%
+				<div class="gdd-block-text-base">Meta: 99,90%</div>
+			</div>
+			<div class="gdd-block">
+				<div class="gdd-block-text-top">Disponibilidade Servidores FileServer</div>
+				100,00%
+				<div class="gdd-block-text-base">Meta: 99,90%</div>
+			</div>
+				
+			<!-- GESTÃO DE CAPACIDADE -->			
+			<div class="gdc-title">GESTÃO DE CAPACIDADE</div>
+				<div class="gdc-block">
+					51<br>Servidores
+				</div>
+				<div class="gdc-block">
+					274<br>Desktops/Notebooks
+				</div>
+				<div class="gdc-block">
+					213<br>Contas de email
+				</div>
+			<div class="gdc-title">Exchange - Crescimento</div>
+				<div class="gdc-block-triplo gdc-block-triplo-ocupacao">
+					<div class="gdc-block-triplo-text">157</div>
+					<div class="gdc-block-triplo-subtext">Ocupação</div>
+				</div>
+				<div class="gdc-block-triplo gdc-block-triplo-limite">
+					<div class="gdc-block-triplo-text">190</div>
+					<div class="gdc-block-triplo-subtext">Limite Segurança</div>
+				</div>
+				<div class="gdc-block-triplo gdc-block-triplo-capacidade">
+					<div class="gdc-block-triplo-text">200</div>
+					<div class="gdc-block-triplo-subtext">Capacidade Total</div>
+				</div>
+				<div class="gdc-chart-full">
+					<p>File Server</p>
+					<div class="gdc-chart" id="gdc-chart-fs"></div>
+				</div>
+			<div class="gdc-title">Memória Cluster em Gb</div>
+				<div class="gdc-block-triplo gdc-block-triplo-ocupacao">
+					<div class="gdc-block-triplo-text">6677</div>
+					<div class="gdc-block-triplo-subtext">Ocupação</div>
+				</div>
+				<div class="gdc-block-triplo gdc-block-triplo-limite">
+					<div class="gdc-block-triplo-text">7239</div>
+					<div class="gdc-block-triplo-subtext">Limite Segurança</div>
+				</div>
+				<div class="gdc-block-triplo gdc-block-triplo-capacidade">
+					<div class="gdc-block-triplo-text">7620</div>
+					<div class="gdc-block-triplo-subtext">Capacidade Total</div>
+				</div>
+				<div class="gdc-chart-full">
+					<p>Memória Cluster</p>
+					<div class="gdc-chart" id="gdc-chart-mc"></div>
+				</div>
+			<!-- GESTÃO DA SEGURANÇA DA INFORMAÇÃO -->
+			<div class="gsi-title">GESTÃO DA SEGURANÇA DA INFORMAÇÃO</div>
+				<div class="gsi-block">
+					<div class="gsi-block-triplo-text">7620</div>
+					<div class="gsi-block-triplo-subtext">Clients + Servers</div>
+				</div>
+				<div class="gsi-block gsi-block-center">
+					<div class="gsi-block-triplo-text">15</div>
+					<div class="gsi-block-triplo-subtext">Detecções</div>
+				</div>
+				<div class="gsi-block">
+					<div class="gsi-block-triplo-text">8</div>
+					<div class="gsi-block-triplo-subtext">Computadores</div>
+				</div>
+				<div class="gsi-chart-full" >
+					<p>Antivírus</p>
+					<div class="gsi-chart" id="gsi-chart-anti"></div>
+				</div>
+			<!-- PESQUISA DE SATISFAÇÃO -->
+			<div class="pds-title">PESQUISA DE SATISFAÇÃO</div>
+			<div class="pds-block"></div>
+			<div class="pds-block"></div>
+			<!-- IMPORT DE JS-->
+			<script type="text/javascript" src='js\api-chart.js'></script>
+			<script type="text/javascript" src='js\gdi-chart.js'></script>
+			<script type="text/javascript" src='js\gdi-chart2.js'></script>
+			<script type="text/javascript" src='js\gdc-chart-fs.js'></script>
+			<script type="text/javascript" src='js\gdc-chart-mc.js'></script>
+			<script type="text/javascript" src='js\gsi-chart-anti.js'></script>
+	</body>
+</html>

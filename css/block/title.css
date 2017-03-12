@@ -1,0 +1,39 @@
+.title{
+	margin:0px;
+	width:100%;
+	border:2px;
+	border-style:solid;
+	border-color:#4682B4;
+	display: inline-block;
+	text-align:center;
+}
+.title-logoProc{
+	padding-top:4px;
+	display:inline-block;
+	float:left;
+	width:auto;
+}
+.title-text{
+	margin:0px 68px;
+	padding-top:15px;
+	font-size:30px;
+	font-family:calibri;
+	line-height:25px;
+	width:auto;
+	display:inline-block;
+}
+.title-subtitle{
+	font-size:15px;
+}
+.title-logoCliente{
+	float:right;
+	padding: 6px 23px 0px 0px;
+	display:inline-block;
+}
+.title-ano{
+	width:100%;
+	background-color: #4682B4;
+	color:#fff;
+	clear:both;
+	text-align:right;
+}

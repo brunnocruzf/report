@@ -1,0 +1,16 @@
+.pds-title{ 
+    width:100%;
+	background-color: #76933C;
+	color:#fff;
+	text-align:center;
+	margin: 4px 0px;
+}
+.pds-block{
+    border: solid 1px;
+    padding: 0px;
+    height: 131px;
+    margin: 1px;
+    background-color: #99FF66;
+    width: 382px;
+    display: inline-flex;
+}

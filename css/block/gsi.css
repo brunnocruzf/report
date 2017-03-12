@@ -1,0 +1,63 @@
+.gsi-title{
+    width:100%;
+	background-color: #595959;
+	color:#fff;
+	text-align:center;
+	margin: 4px 0px;
+}
+.gsi-block{
+    margin-top: 2px;
+    width: 127px;
+    display: inline-flex;
+    padding: 45px 0px;
+    position: relative;
+    text-align: center;
+	background-color: #595959;
+}
+.gsi-block-triplo-text{
+    top: 0px;
+    text-align: center;
+    position: absolute;
+    font-size: 40px;  
+    width: 100%;
+    color: #fff;
+    margin: 10px 0px;
+}
+.gsi-block-triplo-subtext{
+    bottom: 0px;
+    position: absolute;
+    font-size: 11px;
+    width: 100%;
+    text-align:center;
+    clear: both;
+    color: #fff;
+}
+.gsi-block-center{
+	background-color: #808080;
+}
+.gsi-chart-full{
+    width:374px;
+    border:solid 2px;
+    padding:3px;
+    float:right;
+    margin:1px;
+    height:82px;
+}
+p{
+    position: relative;
+    top:-1px;
+    z-index: 1;
+    margin-bottom:0px !important;
+    font-size:19px;
+    font-weight:bold;
+    text-align:center;
+    font-family:Segoe UI Light;
+}
+.gsi-chart{
+    position: relative;
+    display: block;
+    top: -13px;
+    z-index: 0;
+    height: 97%;
+    width: 100%;
+}
