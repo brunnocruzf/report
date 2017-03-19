@@ -1,18 +1,32 @@
 .conteiner{
 	margin-top:7px;
-	right: 5px;
 	width:781px;
-	position:absolute;
 	background-color: #fff;
 }
 .form-conteiner{
-	float: left;
 	box-sizing: content-box;
 	height: 100%;
-
 	width: 38%;
 	background-color: #fff;
 	padding: 1.5%;
+}
+@media(max-width: 1352px) {
+	.form-conteiner{
+		width: 60%;
+		margin: 0 auto;
+	}
+	.conteiner{
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1352px) {
+	.form-conteiner{
+		float: left;
+	}
+	.conteiner{
+		right: 5px;
+		position: absolute;
+	}
 }
 body{
 	 background: #E0E0E0;
