@@ -1,0 +1,18 @@
+.tabletitle{
+   text-align: center;
+    padding: 5px;
+    background: #e0e0e0;
+}
+.table-subtitle{
+    width: 0.5%;
+    font-weight: bold;
+    background-color: #eaeaea;
+}
+.table-item{
+    width: 1%;
+}
+input[type="number"]{
+    width: 95%;
+    border:solid 1px;
+    text-align: right;
+}

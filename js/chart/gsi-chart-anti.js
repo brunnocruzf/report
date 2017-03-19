@@ -2,27 +2,27 @@ google.charts.load('current', {packages: ['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawBasic);
 
 function drawBasic() {
-    var bar1 = 15
-    var bar2 = 12
-    var bar3 = 30
+
     var data = google.visualization.arrayToDataTable([
         ['', '',{role: 'style'},{role:'annotation'}],
-        ['', bar1, '#4F81BD', '\bar1'],
-        ['', bar2, '#4F81BD','bar2'],
-        ['', bar3, '#4F81BD','bar3']
+        ['', 30, '#595959', 30],
+        ['', 50, '#808080','50'],
+        ['', 90, '#595959','90']
     ]);
 
     var options = {
-        chartArea: {width: '110%', height:'50%'},
-        bar: {groupWidth: '50%'},
+        chartArea: {width: '110%', height:'60%'},
+        bar: {groupWidth: '55%'},
         legend: { position: 'none' },
         backgroundColor: 'transparent',
+        fontSize:'12',
         hAxis: {
-            textPosition: 'none'
+            textPosition: 'none',
+            gridlines: { count: 0 }
         }
     };
 
-    var chart = new google.visualization.BarChart(document.getElementById('gdc-chart-mc'));
+    var chart = new google.visualization.BarChart(document.getElementById('gsi-chart-anti'));
 
     chart.draw(data, options);
 }

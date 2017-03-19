@@ -22,11 +22,12 @@
     width: 100%;
     color: #fff;
     margin: 10px 0px;
+    padding-top: 10px;
 }
 .gsi-block-triplo-subtext{
     bottom: 0px;
     position: absolute;
-    font-size: 11px;
+    font-size: 13px;
     width: 100%;
     text-align:center;
     clear: both;

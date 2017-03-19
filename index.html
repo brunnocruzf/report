@@ -4,7 +4,9 @@
 		<title>Report</title>
 		<meta charset="utf-8">
 		<meta name="description" content="Report Semanal de Atendimento">
-		<meta name="author" content="Brunno">
+		<meta name="author" content="Brunno Cruz">
+		<link href="css/base.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
 		<link href="css/block/title.css" rel="stylesheet">
 		<link href="css/block/gns.css" rel="stylesheet">
 		<link href="css/block/gdi.css" rel="stylesheet">
@@ -12,11 +14,176 @@
 		<link href="css/block/gdc.css" rel="stylesheet">
 		<link href="css/block/gsi.css" rel="stylesheet">
 		<link href="css/block/pds.css" rel="stylesheet">
-		<link href="css/base.css" rel="stylesheet">
-		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/form/base-form.css" rel="stylesheet">
+		<!--TESTE MUDAR PARA LOCAL -->
+			<!-- Material Design Lite -->
+    			<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+				<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-cyan.min.css" />
+    		<!-- Material Design icon font -->
+  				<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<!--FIM TESTE-->
 	</head>
 	<body>
-		<div class="conteiner">
+		<!-- TESTE TITLE Material-->
+			<!-- Simple header with scrollable tabs. -->
+			<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<header class="mdl-layout__header">
+				<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">Report</span>
+				</div>
+				<!-- Tabs -->
+				<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+				<a href="#scroll-tab-1" class="mdl-layout__tab is-active">Chamados</a>
+				<a href="#scroll-tab-2" class="mdl-layout__tab">Satisfação</a>
+				<a href="#scroll-tab-3" class="mdl-layout__tab">Exchange</a>
+				<a href="#scroll-tab-4" class="mdl-layout__tab">Fileserver</a>
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" id="bnt-print">
+    				  Imprimir
+   				 </button>
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" id="bnt-pdf">
+    				  PDF
+   				 </button>
+				</div>
+			</header>
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Report</span>
+			</div>
+			<main class="mdl-layout__content">
+				<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+				<div class="page-content">
+					<!--Form Chamados  -->
+						<div class="form-conteiner">
+							<div class="tabletitle">Origim de Chamado</div>
+								<table>    
+									<tr>
+										<td class="table-subtitle">Semana</td>
+										<td class="table-subtitle">Semana 1</td>
+										<td class="table-subtitle">Semana 2</td>
+										<td class="table-subtitle">Semana 3</td>
+										<td class="table-subtitle">Semana 4</td>
+										<td class="table-subtitle">Semana 5</td>
+										<td class="table-subtitle">Total</td>
+									</tr>
+									<tr>
+										<td class="table-subtitle">Telefone/E-mail</td>
+										<td class="table-item"><input type="number"></input></td>
+										<td class="table-item"><input type="number"></input></td>
+										<td class="table-item"><input type="number"></input></td>
+										<td class="table-item"><input type="number"></input></td>
+										<td class="table-item"><input type="number"></input></td>
+										<td class="table-item"><input disabled type="number"></input></td>
+									</tr>
+									<tr>
+										<td class="table-subtitle">Web</td>
+										<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+										<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+										<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+										<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+										<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+										<td class="table-item"><p class="itemtext"><input disabled type="number"></input></td>
+									</tr>     
+									<tr>
+										<td class="table-subtitle"></td>
+										<td class="table-subtitle"></td>
+										<td class="table-subtitle"></td>
+										<td class="table-subtitle"></td>
+										<td class="table-subtitle"></td>
+										<td class="table-subtitle">Total</td>
+										<td class="table-subtitle" id="totalOC"></td>
+									</tr> 
+								</table>
+						</div>
+					<!-- Fim Form Chamados -->
+				</div>
+				</section>
+				<section class="mdl-layout__tab-panel" id="scroll-tab-2">
+				<div class="page-content"><div class="form-conteiner">
+					<div class="tabletitle">Origim de aten</div>
+					<table>
+						<tr>
+							<td class="table-subtitle">Semana</td>
+							<td class="table-subtitle">Semana 1</td>
+							<td class="table-subtitle">Semana 2</td>
+							<td class="table-subtitle">Semana 3</td>
+							<td class="table-subtitle">Semana 4</td>
+							<td class="table-subtitle">Semana 5</td>
+							<td class="table-subtitle">Total</td>
+						</tr>
+						<tr>
+							<td class="table-subtitle">Telefone/E-mail</td>
+							<td class="table-item"><input type="number"></input></td>
+							<td class="table-item"><input type="number"></input></td>
+							<td class="table-item"><input type="number"></input></td>
+							<td class="table-item"><input type="number"></input></td>
+							<td class="table-item"><input type="number"></input></td>
+							<td class="table-item"><input disabled type="number"></input></td>
+						</tr>
+						<tr>
+							<td class="table-subtitle">Web</td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input disabled type="number"></input></td>
+						</tr>
+						<tr>
+							<td class="table-subtitle">Web</td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input disabled type="number"></input></td>
+						</tr><tr>
+						<td class="table-subtitle">Web</td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input disabled type="number"></input></td>
+					</tr><tr>
+						<td class="table-subtitle">Web</td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+						<td class="table-item"><p class="itemtext"><input disabled type="number"></input></td>
+					</tr>
+						<tr>
+							<td class="table-subtitle">Web</td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input type="number"></input></td>
+							<td class="table-item"><p class="itemtext"><input disabled type="number"></input></td>
+						</tr>
+						<tr>
+							<td class="table-subtitle"></td>
+							<td class="table-subtitle"></td>
+							<td class="table-subtitle"></td>
+							<td class="table-subtitle"></td>
+							<td class="table-subtitle"></td>
+							<td class="table-subtitle">Total</td>
+							<td class="table-subtitle" id="totalOC"></td>
+						</tr>
+					</table>
+				</div>
+				</div>
+				</section>
+				<section class="mdl-layout__tab-panel" id="scroll-tab-3">
+				<div class="page-content"><!-- Your content goes here --></div>
+				</section>
+				<section class="mdl-layout__tab-panel" id="scroll-tab-4">
+				<div class="page-content"><!-- Your content goes here --></div>
+				</section>
+		<!--FIM TESTE TITLE Material -->
+
+		<div class="conteiner" contenteditable="true">
 			<!-- Titulo do Report -->
 			<div class="title">
 				<div class="title-logoProc"><img src="img/logo_proc.png"></div>
@@ -52,7 +219,7 @@
 						<td>0</td>
 						<td>0</td>
 						<td>0</td>
-						<td>0</td>
+						<td>5%</td>
 					</tr>
 					<tr>
 						<th scope="row">Tempo Médio De Encerramento</th>
@@ -62,7 +229,7 @@
 						<td>00:00:00</td>
 						<td>00:00:00</td>
 						<td>00:00:00</td>
-						<td>00:00:00</td>
+						<td>00:00:30</td>
 					</tr>
 					<tr>
 						<th scope="row">Total de Chamados por Semana</th>
@@ -112,15 +279,26 @@
 			<div class="gdi-title">GESTÃO DE INCIDENTES</div>
 			<!-- Row incidentes-->
 			<div class="gdi-title gdi-subtitle">Incidentes</div>
-			<div class="gdi-block gdi-abertos">53<br>Abertos</div>
-			<div class="gdi-block gdi-backlog">5<br>Backlog</div>
+			<div class="gdi-block gdi-abertos">
+				<div class="gdi-block-text" id="gbti">42</div>
+				<div class="gdi-block-subtext" >Abertos</div>
+			</div>
+			<div class="gdi-block gdi-backlog">
+				<div class="gdi-block-text" id="gbsi">25</div>
+				<div class="gdi-block-subtext">Backlog</div>
+			</div>
 			<div id="gdi-chart"></div>
 			<!-- Row Requisições-->
 			<div class="gdi-title gdi-subtitle">Requisições</div>
-			<div class="gdi-block gdi-abertos">53<br>Abertos</div>
-			<div class="gdi-block gdi-backlog">5<br>Backlog</div>
+			<div class="gdi-block gdi-abertos">
+				<div class="gdi-block-text" id="gbtr">37</div>
+				<div class="gdi-block-subtext">Abertos</div>
+			</div>
+			<div class="gdi-block gdi-backlog">
+				<div class="gdi-block-text" id="gbsr">6</div>
+				<div class="gdi-block-subtext">Backlog</div>
+			</div>
 			<div id="gdi-chart2"></div>
-			
 			<!-- Gestão de disponibilidade-->
 			<div class="gdd-title">GESTÃO DE DISPONIBILIDADE</div>
 			<!-- Row gdd -->
@@ -143,43 +321,46 @@
 			<!-- GESTÃO DE CAPACIDADE -->			
 			<div class="gdc-title">GESTÃO DE CAPACIDADE</div>
 				<div class="gdc-block">
-					51<br>Servidores
+					<div class="gdc-block-text">51</div>
+					<div class="gdc-block-subtext">Servidores</div>
 				</div>
 				<div class="gdc-block">
-					274<br>Desktops/Notebooks
+					<div class="gdc-block-text">274</div>
+				    <div class="gdc-block-subtext">Desktops/Notebooks</div>
 				</div>
 				<div class="gdc-block">
-					213<br>Contas de email
+					<div class="gdc-block-text">213</div>
+					<div class="gdc-block-subtext">Contas de email</div>
 				</div>
 			<div class="gdc-title">Exchange - Crescimento</div>
-				<div class="gdc-block-triplo gdc-block-triplo-ocupacao">
-					<div class="gdc-block-triplo-text">157</div>
-					<div class="gdc-block-triplo-subtext">Ocupação</div>
+				<div class="gdc-block gdc-block-ocupacao">
+					<div class="gdc-block-text">156,8</div>
+					<div class="gdc-block-subtext">Ocupação</div>
 				</div>
-				<div class="gdc-block-triplo gdc-block-triplo-limite">
-					<div class="gdc-block-triplo-text">190</div>
-					<div class="gdc-block-triplo-subtext">Limite Segurança</div>
+				<div class="gdc-block gdc-block-limite">
+					<div class="gdc-block-text">190</div>
+					<div class="gdc-block-subtext">Limite Segurança</div>
 				</div>
-				<div class="gdc-block-triplo gdc-block-triplo-capacidade">
-					<div class="gdc-block-triplo-text">200</div>
-					<div class="gdc-block-triplo-subtext">Capacidade Total</div>
+				<div class="gdc-block gdc-block-capacidade">
+					<div class="gdc-block-text">200</div>
+					<div class="gdc-block-subtext">Capacidade Total</div>
 				</div>
 				<div class="gdc-chart-full">
 					<p>File Server</p>
 					<div class="gdc-chart" id="gdc-chart-fs"></div>
 				</div>
 			<div class="gdc-title">Memória Cluster em Gb</div>
-				<div class="gdc-block-triplo gdc-block-triplo-ocupacao">
-					<div class="gdc-block-triplo-text">6677</div>
-					<div class="gdc-block-triplo-subtext">Ocupação</div>
+				<div class="gdc-block gdc-block-ocupacao">
+					<div class="gdc-block-text">6677</div>
+					<div class="gdc-block-subtext">Ocupação</div>
 				</div>
-				<div class="gdc-block-triplo gdc-block-triplo-limite">
-					<div class="gdc-block-triplo-text">7239</div>
-					<div class="gdc-block-triplo-subtext">Limite Segurança</div>
+				<div class="gdc-block gdc-block-limite">
+					<div class="gdc-block-text">7239</div>
+					<div class="gdc-block-subtext">Limite Segurança</div>
 				</div>
-				<div class="gdc-block-triplo gdc-block-triplo-capacidade">
-					<div class="gdc-block-triplo-text">7620</div>
-					<div class="gdc-block-triplo-subtext">Capacidade Total</div>
+				<div class="gdc-block gdc-block-capacidade">
+					<div class="gdc-block-text">7620</div>
+					<div class="gdc-block-subtext">Capacidade Total</div>
 				</div>
 				<div class="gdc-chart-full">
 					<p>Memória Cluster</p>
@@ -205,14 +386,42 @@
 				</div>
 			<!-- PESQUISA DE SATISFAÇÃO -->
 			<div class="pds-title">PESQUISA DE SATISFAÇÃO</div>
-			<div class="pds-block"></div>
-			<div class="pds-block"></div>
+			<div class="pds-block">
+				<p>Satisfação</p>
+				<div class="pds-chart" id="pds-chart-satis"></div>
+			</div>
+			<div class="pds-block">
+				<p>Percentual de Aderência</p>
+				<div class="pds-chart" id="pds-chart-pda"></div>
+			</div>
+			<!-- fim PESQUISA DE SATISFAÇÃO -->
+			<!-- form -->
+
+
+			<!-- fim form -->
 			<!-- IMPORT DE JS-->
-			<script type="text/javascript" src='js\api-chart.js'></script>
-			<script type="text/javascript" src='js\gdi-chart.js'></script>
-			<script type="text/javascript" src='js\gdi-chart2.js'></script>
-			<script type="text/javascript" src='js\gdc-chart-fs.js'></script>
-			<script type="text/javascript" src='js\gdc-chart-mc.js'></script>
-			<script type="text/javascript" src='js\gsi-chart-anti.js'></script>
+			<!-- JS Charts -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+			<script type="text/javascript" src='js\chart\api-chart.js'></script>
+			<script type="text/javascript" src='js\chart\gdi-chart-inc.js'></script>
+			<script type="text/javascript" src='js\chart\gdi-chart-req.js'></script>
+			<script type="text/javascript" src='js\chart\gdc-chart-fs.js'></script>
+			<script type="text/javascript" src='js\chart\gdc-chart-mc.js'></script>
+			<script type="text/javascript" src='js\chart\gsi-chart-anti.js'></script>
+			<script type="text/javascript" src='js\chart\pds-chart-satis.js'></script>
+			<script type="text/javascript" src='js\chart\pds-chart-pda.js'></script>
+			<!-- FIM JS Charts -->
+			<!-- jquery -->
+			<script type="text/javascript" src='js\jquery\jquery-3.2.0.min.js'></script>
+			<!-- FIM jquery -->
+			<script type="text/javascript" src='js\insertValue\js.js'></script>
+			<!-- JS que salva em pdf -->
+			<script type="text/javascript" src='js\savePdf\jspdf.js'></script>
+			<script type="text/javascript" src='js\savePdf\savepdf.js'></script>
+			<!-- JS que abre tela de impressão -->
+			<script type="text/javascript" src="js/print/print.js"></script>
+			<!-- FIM JS que salva em pdf -->
+			<!-- FIM IMPORT DE JS-->
+			<!-- fim form -->
 	</body>
 </html>

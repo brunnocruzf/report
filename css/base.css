@@ -1,6 +1,29 @@
 .conteiner{
-	margin-left:10px;
+	margin-top:7px;
+	right: 5px;
 	width:781px;
 	position:absolute;
-	float:left;
+	background-color: #fff;
+}
+.form-conteiner{
+	float: left;
+	box-sizing: content-box;
+	height: 100%;
+
+	width: 38%;
+	background-color: #fff;
+	padding: 1.5%;
+}
+body{
+	 background: #E0E0E0;
+}
+.mdl-button--primary.mdl-button--primary.mdl-button--raised, .mdl-button--primary.mdl-button--primary.mdl-button--fab{
+	background-color: #E0E0E0 !important;
+	position: absolute;
+	color: #3f51b5!important;
+	float: right!important;
+	right: 7%!important;
+}
+#bnt-print{
+	right: 12%!important;
 }

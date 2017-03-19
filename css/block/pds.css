@@ -6,11 +6,10 @@
 	margin: 4px 0px;
 }
 .pds-block{
-    border: solid 1px;
-    padding: 0px;
-    height: 131px;
+    width: 378px;
+    border: solid 2px;
+    padding: 3px;
+    float: left;
     margin: 1px;
-    background-color: #99FF66;
-    width: 382px;
-    display: inline-flex;
+    height: 120px;
 }
