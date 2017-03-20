@@ -24,6 +24,7 @@
 		<!--FIM TESTE-->
 	</head>
 	<body>
+		<div id="conteudo">
 		<!-- TESTE TITLE Material-->
 			<!-- Simple header with scrollable tabs. -->
 			<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -38,7 +39,7 @@
 				<a href="#scroll-tab-2" class="mdl-layout__tab">Satisfação</a>
 				<a href="#scroll-tab-3" class="mdl-layout__tab">Exchange</a>
 				<a href="#scroll-tab-4" class="mdl-layout__tab">Fileserver</a>
-				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" id="bnt-print">
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" id="bnt-print" onclick="print()">
     				  Imprimir
    				 </button>
 				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" id="bnt-pdf">
@@ -112,7 +113,7 @@
 						</tr>
 						<tr>
 							<td class="table-subtitle">Telefone/E-mail</td>
-							<td class="table-item"><input type="number"></input></td>
+							<td class="table-item"><input type="number"></td>
 							<td class="table-item"><input type="number"></input></td>
 							<td class="table-item"><input type="number"></input></td>
 							<td class="table-item"><input type="number"></input></td>
@@ -181,7 +182,10 @@
 				<section class="mdl-layout__tab-panel" id="scroll-tab-4">
 				<div class="page-content"><!-- Your content goes here --></div>
 				</section>
-		<!--FIM TESTE TITLE Material -->
+
+
+
+				<!--FIM TESTE TITLE Material -->
 
 		<div class="conteiner" contenteditable="true">
 			<!-- Titulo do Report -->
@@ -418,10 +422,7 @@
 			<!-- JS que salva em pdf -->
 			<script type="text/javascript" src='js\savePdf\jspdf.js'></script>
 			<script type="text/javascript" src='js\savePdf\savepdf.js'></script>
-			<!-- JS que abre tela de impressão -->
-			<script type="text/javascript" src="js/print/print.js"></script>
 			<!-- FIM JS que salva em pdf -->
 			<!-- FIM IMPORT DE JS-->
-			<!-- fim form -->
 	</body>
 </html>
