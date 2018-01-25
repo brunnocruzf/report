@@ -1,13 +1,21 @@
 google.charts.load('current', {packages: ['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawBasic);
 
-function drawBasic() {
-    var barra1 = document.getElementById('gbsi').textContent;
-     barra1 = parseInt(barra1);
 
+
+
+function drawBasic() {
+    var barra1 =  document.getElementById('gbsi').textContent;
+    barra1 = parseInt(barra1);
      var barra2 = document.getElementById('gbti').textContent;
      barra2 = parseInt(barra2);
 
+    var app = angular.module('app', []);
+      app.controller('myCtrl', function($scope) {
+      $scope.gbsi = barra1;
+      $scope.gbti = barra2;
+    });
+    console.log($scope.gbti);
 
       var data = google.visualization.arrayToDataTable([
         ['', '',{role: 'style'}],
@@ -29,5 +37,4 @@ function drawBasic() {
 
       chart.draw(data, options);
     };
-
-    setInterval(drawBasic, 1000);
+//setInterval(drawBasic, 888);

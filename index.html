@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app" ng-controller="myCtrl">
 	<head>
 		<title>Report</title>
 		<meta charset="utf-8">
@@ -15,13 +15,13 @@
 		<link href="css/block/gsi.css" rel="stylesheet">
 		<link href="css/block/pds.css" rel="stylesheet">
 		<link href="css/form/base-form.css" rel="stylesheet">
-		<!--TESTE MUDAR PARA LOCAL -->
 			<!-- Material Design Lite -->
     			<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 				<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-cyan.min.css" />
     		<!-- Material Design icon font -->
-  				<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<!--FIM TESTE-->
+				  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+			<!-- Angular import -->
+				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
 	</head>
 	<body>
 		<div id="conteudo">
@@ -100,7 +100,7 @@
 				</section>
 				<section class="mdl-layout__tab-panel" id="scroll-tab-2">
 				<div class="page-content"><div class="form-conteiner">
-					<div class="tabletitle">Origim de aten</div>
+					<div class="tabletitle">Origim de atendimento</div>
 					<table>
 						<tr>
 							<td class="table-subtitle">Semana</td>
@@ -284,11 +284,11 @@
 			<!-- Row incidentes-->
 			<div class="gdi-title gdi-subtitle">Incidentes</div>
 			<div class="gdi-block gdi-abertos">
-				<div class="gdi-block-text" id="gbti">42</div>
+				<div class="gdi-block-text" id="gbti"></div>
 				<div class="gdi-block-subtext" >Abertos</div>
 			</div>
 			<div class="gdi-block gdi-backlog">
-				<div class="gdi-block-text" id="gbsi">25</div>
+				<div class="gdi-block-text" id="gbsi" ng-model="gbsi"></div>
 				<div class="gdi-block-subtext">Backlog</div>
 			</div>
 			<div id="gdi-chart"></div>
